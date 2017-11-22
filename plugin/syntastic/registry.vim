@@ -40,6 +40,7 @@ let s:_DEFAULT_CHECKERS = {
         \ 'fortran':       ['gfortran'],
         \ 'glsl':          ['cgc'],
         \ 'go':            [],
+        \ 'groovy':        ['groovyc'],
         \ 'haml':          ['haml'],
         \ 'handlebars':    ['handlebars'],
         \ 'haskell':       ['hdevtools', 'hlint'],
@@ -134,6 +135,7 @@ lockvar! s:_DEFAULT_FILETYPE_MAP
 let s:_ECLIM_TYPES = [
         \ 'c',
         \ 'cpp',
+        \ 'groovy',
         \ 'html',
         \ 'java',
         \ 'php',
