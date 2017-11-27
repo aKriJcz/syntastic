@@ -221,6 +221,11 @@ endfunction " }}}2
 function! s:LoadConfigFile() " {{{2
     if filereadable(expand(g:syntastic_groovy_groovyc_config_file, 1))
         execute 'source ' . fnameescape(expand(g:syntastic_groovy_groovyc_config_file, 1))
+
+        " Setting of JavaImp.vim plugin
+        if exists(':JavaImpGenerate')
+            let g:JavaImpPaths = g:syntastic_java_javac_classpath
+        endif
     endif
 endfunction " }}}2
 
